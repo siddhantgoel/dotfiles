@@ -22,15 +22,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'jnurmine/Zenburn'
-Plugin 'github-theme'
-Plugin 'mileszs/ack.vim'
-Plugin 'croaker/mustang-vim'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'wting/rust.vim'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'uarun/vim-protobuf'
+Plugin 'fatih/vim-go'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -42,9 +38,8 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
-set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
-set guifont=Monaco:h12          "Use Monaco font
+set guifont=Monospace
 set incsearch
 set hlsearch
 set ruler
@@ -84,7 +79,12 @@ set textwidth=80
 
 " Display tabs and trailing spaces visually
 if has("gui_running")
-    set list listchars=tab:>-,trail:·
+    colorscheme solarized
+    set background=dark
+    "set list listchars=tab:>-,trail:·
+else
+    colorscheme default
+    set background=light
 endif
 
 set wrap
