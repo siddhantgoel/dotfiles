@@ -27,6 +27,7 @@ Plugin 'fholgado/minibufexpl.vim'
 Plugin 'uarun/vim-protobuf'
 Plugin 'fatih/vim-go'
 Plugin 'rust-lang/rust.vim'
+Plugin 'octol/vombatidae-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -78,14 +79,9 @@ set shiftwidth=4
 set textwidth=80
 
 " Display tabs and trailing spaces visually
-if has("gui_running")
-    colorscheme solarized
-    set background=dark
-    "set list listchars=tab:>-,trail:·
-else
-    colorscheme default
-    set background=light
-endif
+colorscheme delek
+set background=dark
+set list listchars=tab:>-,trail:·
 
 set wrap
 set linebreak    "Wrap lines at convenient points
@@ -126,7 +122,7 @@ set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=htmlcov/**
 set wildignore+=*.ipynb
 
-let NERDTreeIgnore = ['\.pyc$', '\.ipynb$']
+let NERDTreeIgnore = ['\.pyc$', '\.ipynb$', '__pycache__$']
 
 let go_highlight_trailing_whitespace_error = 0
 let go_highlight_chan_whitespace_error = 0
