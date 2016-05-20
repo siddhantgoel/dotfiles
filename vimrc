@@ -14,20 +14,30 @@ endif
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-"
-" let Vundle manage Vundle, required
+
+" general plugins
 Plugin 'gmarik/Vundle.vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'uarun/vim-protobuf'
+
+" languages
 Plugin 'fatih/vim-go'
 Plugin 'rust-lang/rust.vim'
+Plugin 'jsx/jsx.vim'
+Plugin 'isRuslan/vim-es6'
+Plugin 'mustache/vim-mustache-handlebars'
+
+" themes
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'octol/vombatidae-vim'
+Plugin 'jonathanfilip/vim-lucius'
+Plugin 'scwood/vim-hybrid'
+Plugin 'joshdick/onedark.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -40,7 +50,7 @@ set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
-set guifont=Monospace
+set guifont=Monospace\ 9
 set incsearch
 set hlsearch
 set ruler
@@ -63,7 +73,7 @@ let mapleader=","
 let g:ruby_path = system('echo $HOME/.rbenv/shims')
 
 if $TERM == "xterm-256color"
-    set t_Co=256
+    set t_co=256
 endif
 
 " ================ Indentation ======================
@@ -77,10 +87,9 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set textwidth=80
+set background=light
 
 " Display tabs and trailing spaces visually
-colorscheme delek
-set background=dark
 set list listchars=tab:>-,trail:·
 
 set wrap
