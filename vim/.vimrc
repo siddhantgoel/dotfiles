@@ -50,7 +50,7 @@ set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
-set guifont=Monospace\ 9
+set guifont=Source\ Code\ Pro\ 9
 set incsearch
 set hlsearch
 set ruler
