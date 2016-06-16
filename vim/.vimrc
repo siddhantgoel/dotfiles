@@ -76,6 +76,9 @@ if $TERM == "xterm-256color"
     set t_co=256
 endif
 
+set guioptions-=m
+set guioptions-=T
+
 " ================ Indentation ======================
 
 " set autoindent
