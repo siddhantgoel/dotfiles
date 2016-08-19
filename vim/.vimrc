@@ -24,6 +24,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'uarun/vim-protobuf'
+Plugin 'hashivim/vim-terraform'
 
 " languages
 Plugin 'fatih/vim-go'
