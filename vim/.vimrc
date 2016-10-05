@@ -99,6 +99,8 @@ set list listchars=tab:>-,trail:·
 set wrap
 set linebreak    "Wrap lines at convenient points
 
+autocmd BufNewFile,BufRead *.sls set filetype=yaml
+
 " ================ Turn Off Swap Files ==============
 
 set noswapfile
