@@ -32,6 +32,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'jsx/jsx.vim'
 Plugin 'isRuslan/vim-es6'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'posva/vim-vue'
 
 " themes
 Plugin 'altercation/vim-colors-solarized'
