@@ -25,6 +25,7 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'uarun/vim-protobuf'
 Plugin 'hashivim/vim-terraform'
+Plugin 'vimwiki/vimwiki'
 
 " languages
 Plugin 'fatih/vim-go'
@@ -33,6 +34,7 @@ Plugin 'jsx/jsx.vim'
 Plugin 'isRuslan/vim-es6'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'posva/vim-vue'
+Plugin 'othree/html5.vim'
 
 " themes
 Plugin 'altercation/vim-colors-solarized'
