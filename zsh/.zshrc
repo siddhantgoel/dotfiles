@@ -5,15 +5,17 @@ SAVEHIST=1000
 unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
+
 zstyle :compinstall filename '/home/siddhant/.zshrc'
 
-autoload -Uz compinit
+autoload -Uz compinit promptinit
+
 compinit
-# End of lines added by compinstall
+promptinit
+
+prompt walters
 
 autoload -U colors && colors
-PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[green]%}%~ %{$reset_color%}%% "
 
 setopt HIST_IGNORE_DUPS
 
@@ -27,8 +29,16 @@ xset r rate 200 32
 WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
-PATH="/usr/local/heroku/bin:$HOME/.rbenv/bin:$PATH"
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Go
 export GOPATH=~/Work/Go
 export PATH=$PATH:~/Work/Go/bin
+
+PATH="/usr/local/heroku/bin:$PATH"
+
+source $HOME/.aliases
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
