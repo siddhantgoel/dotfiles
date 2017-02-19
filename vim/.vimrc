@@ -35,6 +35,7 @@ Plugin 'isRuslan/vim-es6'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'posva/vim-vue'
 Plugin 'othree/html5.vim'
+Plugin 'tshirtman/vim-cython'
 
 " themes
 Plugin 'altercation/vim-colors-solarized'
