@@ -14,7 +14,8 @@ compinit
 promptinit
 
 autoload -U colors && colors
-export PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[green]%}%~ %{$reset_color%}%% "
+
+PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[green]%}%~ %{$reset_color%}%% "
 
 setopt HIST_IGNORE_DUPS
 
