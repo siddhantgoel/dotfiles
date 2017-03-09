@@ -141,7 +141,7 @@ set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=htmlcov/**
 set wildignore+=*.ipynb
 
-let NERDTreeIgnore = ['\.pyc$', '\.ipynb$', '__pycache__$']
+let NERDTreeIgnore = ['\.pyc$', '\.ipynb$', '__pycache__$', '^terraform.tfstate.*.backup']
 
 let go_highlight_trailing_whitespace_error = 0
 let go_highlight_chan_whitespace_error = 0
