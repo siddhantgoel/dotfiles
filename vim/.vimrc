@@ -104,6 +104,7 @@ set wrap
 set linebreak    "Wrap lines at convenient points
 
 autocmd BufNewFile,BufRead *.sls set filetype=yaml
+autocmd BufNewFile,BufRead *.lr set filetype=markdown
 
 " ================ Turn Off Swap Files ==============
 
