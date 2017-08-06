@@ -37,7 +37,12 @@ eval "$(rbenv init -)"
 export GOPATH=~/Work/Go
 export PATH=$PATH:~/Work/Go/bin
 
-PATH="/usr/local/heroku/bin:$PATH"
+# Android
+export ANDROID_HOME=$HOME/Work/Android/SDK
+export PATH="$ANDROID_HOME/tools:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+
+export PATH="/usr/local/heroku/bin:$PATH"
 
 source $HOME/.aliases
 
