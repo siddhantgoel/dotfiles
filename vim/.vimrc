@@ -37,6 +37,7 @@ Plugin 'posva/vim-vue'
 Plugin 'othree/html5.vim'
 Plugin 'tshirtman/vim-cython'
 Plugin 'nathangrigg/vim-beancount'
+Plugin 'w0rp/ale'
 
 " themes
 Plugin 'altercation/vim-colors-solarized'
