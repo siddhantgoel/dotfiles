@@ -47,3 +47,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 source $HOME/.aliases
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+pdfmerge() {
+    gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ;
+}
