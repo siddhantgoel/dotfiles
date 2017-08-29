@@ -37,7 +37,6 @@ Plugin 'posva/vim-vue'
 Plugin 'othree/html5.vim'
 Plugin 'tshirtman/vim-cython'
 Plugin 'nathangrigg/vim-beancount'
-Plugin 'w0rp/ale'
 Plugin 'elixir-editors/vim-elixir'
 
 " themes
