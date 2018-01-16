@@ -33,14 +33,12 @@ source /usr/bin/virtualenvwrapper.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Python
+export PATH="$HOME/.local/bin:$PATH"
+
 # Go
 export GOPATH=~/Work/Go
 export PATH=$PATH:~/Work/Go/bin
-
-# Android
-export ANDROID_HOME=$HOME/Work/Android/SDK
-export PATH="$ANDROID_HOME/tools:$PATH"
-export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 export PATH="/usr/local/heroku/bin:$PATH"
 
