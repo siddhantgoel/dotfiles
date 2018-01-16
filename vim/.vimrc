@@ -16,35 +16,35 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " general plugins
-Plugin 'gmarik/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 'uarun/vim-protobuf'
-Plugin 'hashivim/vim-terraform'
 Plugin 'vimwiki/vimwiki'
 
 " languages
-Plugin 'fatih/vim-go'
-Plugin 'rust-lang/rust.vim'
-Plugin 'jsx/jsx.vim'
-Plugin 'isRuslan/vim-es6'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'posva/vim-vue'
-Plugin 'othree/html5.vim'
-Plugin 'tshirtman/vim-cython'
-Plugin 'nathangrigg/vim-beancount'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'fisadev/vim-isort'
+Plugin 'hashivim/vim-terraform'
+Plugin 'isRuslan/vim-es6'
+Plugin 'jsx/jsx.vim'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'nathangrigg/vim-beancount'
+Plugin 'othree/html5.vim'
+Plugin 'posva/vim-vue'
+Plugin 'rust-lang/rust.vim'
+Plugin 'tshirtman/vim-cython'
 
 " themes
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'octol/vombatidae-vim'
 Plugin 'jonathanfilip/vim-lucius'
-Plugin 'scwood/vim-hybrid'
 Plugin 'joshdick/onedark.vim'
+Plugin 'octol/vombatidae-vim'
+Plugin 'scwood/vim-hybrid'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
