@@ -151,3 +151,5 @@ let go_highlight_chan_whitespace_error = 0
 let go_highlight_extra_types = 0
 let go_highlight_space_tab_error = 0
 let go_highlight_trailing_whitespace_error = 0
+
+autocmd FileType vue syntax sync fromstart
