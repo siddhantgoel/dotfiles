@@ -25,6 +25,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'uarun/vim-protobuf'
 Plugin 'vimwiki/vimwiki'
+Plugin 'plytophogy/vim-virtualenv'
+Plugin 'tpope/vim-fugitive'
 
 " languages
 Plugin 'elixir-editors/vim-elixir'
@@ -38,6 +40,11 @@ Plugin 'othree/html5.vim'
 Plugin 'posva/vim-vue'
 Plugin 'rust-lang/rust.vim'
 Plugin 'tshirtman/vim-cython'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'zah/nim.vim'
+Plugin 'neovimhaskell/haskell-vim'
 
 " themes
 Plugin 'altercation/vim-colors-solarized'
@@ -45,6 +52,7 @@ Plugin 'jonathanfilip/vim-lucius'
 Plugin 'joshdick/onedark.vim'
 Plugin 'octol/vombatidae-vim'
 Plugin 'scwood/vim-hybrid'
+Plugin 'mayansmoke'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -57,7 +65,7 @@ set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
-set guifont=Fira\ Mono\ 10
+set guifont=Source\ Code\ Pro\ 10
 set incsearch
 set hlsearch
 set ruler
@@ -100,7 +108,7 @@ set textwidth=80
 set background=light
 
 " Display tabs and trailing spaces visually
-set list listchars=tab:>-,trail:·
+" set list listchars=tab:>-,trail:·
 
 set wrap
 set linebreak    "Wrap lines at convenient points
@@ -151,5 +159,7 @@ let go_highlight_chan_whitespace_error = 0
 let go_highlight_extra_types = 0
 let go_highlight_space_tab_error = 0
 let go_highlight_trailing_whitespace_error = 0
+
+let g:vim_isort_python_version = 'python3'
 
 autocmd FileType vue syntax sync fromstart
