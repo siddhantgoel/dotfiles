@@ -22,37 +22,30 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-surround'
-Plugin 'uarun/vim-protobuf'
-Plugin 'vimwiki/vimwiki'
-Plugin 'plytophogy/vim-virtualenv'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'vimwiki/vimwiki'
 
 " languages
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'elixir-editors/vim-elixir'
-Plugin 'fisadev/vim-isort'
+Plugin 'godlygeek/tabular'
 Plugin 'hashivim/vim-terraform'
 Plugin 'isRuslan/vim-es6'
 Plugin 'jsx/jsx.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'nathangrigg/vim-beancount'
-Plugin 'othree/html5.vim'
+Plugin 'neovimhaskell/haskell-vim'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'posva/vim-vue'
 Plugin 'rust-lang/rust.vim'
+Plugin 'tomlion/vim-solidity'
 Plugin 'tshirtman/vim-cython'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'zah/nim.vim'
-Plugin 'neovimhaskell/haskell-vim'
+Plugin 'ziglang/zig.vim'
 
 " themes
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'jonathanfilip/vim-lucius'
-Plugin 'joshdick/onedark.vim'
-Plugin 'octol/vombatidae-vim'
-Plugin 'scwood/vim-hybrid'
-Plugin 'mayansmoke'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -96,8 +89,9 @@ set guioptions-=T
 
 " ================ Indentation ======================
 
-" set autoindent
-" set smartindent
+" Comment the following two lines to switch back the config
+set autoindent
+set smartindent
 
 set smarttab
 set expandtab
