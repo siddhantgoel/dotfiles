@@ -6,7 +6,7 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-zstyle :compinstall filename '/home/siddhant/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit promptinit
 
@@ -25,6 +25,8 @@ EDITOR=vim
 VISUAL=vim
 
 xset r rate 200 32
+
+source /usr/bin/virtualenvwrapper.sh
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
