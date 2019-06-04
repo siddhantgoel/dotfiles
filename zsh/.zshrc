@@ -26,8 +26,6 @@ VISUAL=vim
 
 xset r rate 200 32
 
-source /usr/bin/virtualenvwrapper.sh
-
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 pdfmerge() {
