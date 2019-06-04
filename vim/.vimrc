@@ -22,26 +22,21 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'vimwiki/vimwiki'
 
 " languages
-Plugin 'editorconfig/editorconfig-vim'
+Plugin 'ambv/black'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 Plugin 'hashivim/vim-terraform'
 Plugin 'isRuslan/vim-es6'
 Plugin 'jsx/jsx.vim'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'nathangrigg/vim-beancount'
-Plugin 'neovimhaskell/haskell-vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'posva/vim-vue'
 Plugin 'rust-lang/rust.vim'
-Plugin 'tomlion/vim-solidity'
 Plugin 'tshirtman/vim-cython'
-Plugin 'zah/nim.vim'
 Plugin 'ziglang/zig.vim'
 
 " themes
@@ -155,5 +150,8 @@ let go_highlight_space_tab_error = 0
 let go_highlight_trailing_whitespace_error = 0
 
 let g:vim_isort_python_version = 'python3'
+
+let g:black_linelength = 79
+let g:black_skip_string_normalization = 1
 
 autocmd FileType vue syntax sync fromstart
