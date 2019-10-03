@@ -1,49 +1,29 @@
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
-filetype off
-
-" TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
-" source ~/.vimrc.before if it exists.
-if filereadable(expand("~/.vimrc.before"))
-  source ~/.vimrc.before
-endif
-
-" ============= Vundle initialization ================
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin(stdpath('data') . '/plugged')
 
 " general plugins
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'fholgado/minibufexpl.vim'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-surround'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'fholgado/minibufexpl.vim'
+Plug 'hynek/vim-python-pep8-indent'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
 
 " languages
-Plugin 'ambv/black'
-Plugin 'elixir-editors/vim-elixir'
-Plugin 'fatih/vim-go'
-Plugin 'godlygeek/tabular'
-Plugin 'hashivim/vim-terraform'
-Plugin 'isRuslan/vim-es6'
-Plugin 'jsx/jsx.vim'
-Plugin 'nathangrigg/vim-beancount'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'posva/vim-vue'
-Plugin 'rust-lang/rust.vim'
-Plugin 'tshirtman/vim-cython'
-Plugin 'ziglang/zig.vim'
+Plug 'fatih/vim-go'
+Plug 'godlygeek/tabular'
+Plug 'hashivim/vim-terraform'
+Plug 'isRuslan/vim-es6'
+Plug 'nathangrigg/vim-beancount'
+Plug 'plasticboy/vim-markdown'
+Plug 'posva/vim-vue'
+Plug 'rust-lang/rust.vim'
+Plug 'tshirtman/vim-cython'
+Plug 'ziglang/zig.vim'
 
 " themes
-Plugin 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()
 
 " ================ General Config ====================
 
@@ -53,10 +33,11 @@ set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
-set guifont=Source\ Code\ Pro\ 10
+set guifont=Inconsolata\ 10
 set incsearch
 set hlsearch
 set ruler
+
 nnoremap <Space> :set hlsearch!<CR>
 
 " This makes vim act like all other editors, buffers can
@@ -72,8 +53,6 @@ syntax on
 " The mapleader has to be set before vundle starts loading all 
 " the plugins.
 let mapleader=","
-
-let g:ruby_path = system('echo $HOME/.rbenv/shims')
 
 if $TERM == "xterm-256color"
     set t_co=256
@@ -97,7 +76,7 @@ set textwidth=80
 set background=light
 
 " Display tabs and trailing spaces visually
-" set list listchars=tab:>-,trail:·
+" set list listchars=tab:>-,trail:Â·
 
 set wrap
 set linebreak    "Wrap lines at convenient points
