@@ -23,3 +23,5 @@ VISUAL=vim
 pdfmerge() {
     gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ;
 }
+
+source $HOME/.poetry/env
