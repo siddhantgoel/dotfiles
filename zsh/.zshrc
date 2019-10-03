@@ -17,8 +17,6 @@ PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[green]%}%~ %{$reset
 
 setopt HIST_IGNORE_DUPS
 
-[[ -z $DISPLAY && XDG_VTNR -eq 1 ]] && exec startx
-
 EDITOR=vim
 VISUAL=vim
 
