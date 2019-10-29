@@ -17,6 +17,7 @@ Plug 'nathangrigg/vim-beancount'
 Plug 'plasticboy/vim-markdown'
 Plug 'posva/vim-vue'
 Plug 'rust-lang/rust.vim'
+Plug 'tomlion/vim-solidity'
 Plug 'tshirtman/vim-cython'
 Plug 'ziglang/zig.vim'
 
