@@ -64,6 +64,9 @@ endif
 set guioptions-=m
 set guioptions-=T
 
+let g:python_host_prog = '$HOME/.virtualenvs/neovim-2/bin/python'
+let g:python3_host_prog = '$HOME/.virtualenvs/neovim-3/bin/python'
+
 " ================ Indentation ======================
 
 " Comment the following two lines to switch back the config
