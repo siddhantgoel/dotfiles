@@ -130,9 +130,4 @@ let go_highlight_extra_types = 0
 let go_highlight_space_tab_error = 0
 let go_highlight_trailing_whitespace_error = 0
 
-let g:vim_isort_python_version = 'python3'
-
-let g:black_linelength = 79
-let g:black_skip_string_normalization = 1
-
 autocmd FileType vue syntax sync fromstart
