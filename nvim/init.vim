@@ -4,6 +4,7 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'hynek/vim-python-pep8-indent'
+Plug 'junegunn/goyo.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
