@@ -1,5 +1,7 @@
 export RESTIC_PASSWORD_FILE=$HOME/.restic-password
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # snaps
 export PATH="/snap/bin:$PATH"
 
