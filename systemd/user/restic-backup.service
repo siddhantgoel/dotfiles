@@ -1,0 +1,10 @@
+[Unit]
+Description=Restic backup service
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/siddhant/.local/bin/crestic home backup
+
+[Install]
+WantedBy=default.target
