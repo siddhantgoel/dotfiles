@@ -25,6 +25,10 @@ Plug 'ziglang/zig.vim'
 
 " themes
 Plug 'altercation/vim-colors-solarized'
+Plug 'endel/vim-github-colorscheme'
+Plug 'mkarmona/materialbox'
+Plug 'rakr/vim-colors-rakr'
+Plug 'rakr/vim-one'
 
 call plug#end()
 
