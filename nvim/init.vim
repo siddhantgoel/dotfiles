@@ -41,7 +41,7 @@ set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
 au FocusGained * :checktime
-set guifont=Hack:h10
+set guifont=Monospace:h10
 set incsearch
 set hlsearch
 set ruler
