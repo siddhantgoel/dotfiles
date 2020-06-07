@@ -1,3 +1,5 @@
+source /usr/share/zplug/init.zsh
+
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
@@ -23,3 +25,5 @@ VISUAL=vim
 pdfmerge() {
     gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ;
 }
+
+zplug load
