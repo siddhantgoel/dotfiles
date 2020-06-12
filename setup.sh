@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if ! [ -x "$(command -v stow)" ]; then
   echo "Please install GNU Stow." >&2
   exit 1
