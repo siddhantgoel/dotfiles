@@ -138,5 +138,6 @@ let go_highlight_trailing_whitespace_error = 0
 
 let g:black_line_length = 79
 let g:black_skip_string_normalization = 1
+let g:go_version_warning = 0
 
 autocmd FileType vue syntax sync fromstart
