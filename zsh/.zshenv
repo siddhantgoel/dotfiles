@@ -6,7 +6,10 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/snap/bin:$PATH"
 
 # python
-source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 source $HOME/.poetry/env
 
 # npm
