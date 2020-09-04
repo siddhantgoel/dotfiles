@@ -34,7 +34,9 @@ Plug 'rakr/vim-one'
 
 call plug#end()
 
-" ================ General Config ====================
+" ==============
+" General Config
+" ==============
 
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
@@ -67,7 +69,17 @@ let mapleader=","
 set guioptions-=m
 set guioptions-=T
 
-" ================ Indentation ======================
+" =========
+" Filetypes
+" =========
+
+autocmd BufNewFile,BufRead *.sls set filetype=yaml
+autocmd BufNewFile,BufRead *.lr set filetype=markdown
+autocmd FileType vue syntax sync fromstart
+
+" ===========
+" Indentation
+" ===========
 
 " Comment the following two lines to switch back the config
 set autoindent
@@ -87,29 +99,35 @@ set background=light
 set wrap
 set linebreak    "Wrap lines at convenient points
 
-autocmd BufNewFile,BufRead *.sls set filetype=yaml
-autocmd BufNewFile,BufRead *.lr set filetype=markdown
-
-" ================ Turn Off Swap Files ==============
+" ==========
+" Swap Files
+" ==========
 
 set noswapfile
 set nobackup
 set nowb
 
-" ================ Persistent Undo ==================
+" ===============
+" Persistent Undo
+" ===============
+"
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
 
 set undodir=~/.vim/backups
 set undofile
 
-" ================ Folds ============================
+" =====
+" Folds
+" =====
 
 set foldmethod=manual   "fold manually
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 
-" ================ Completion =======================
+" ==========
+" Completion
+" ==========
 
 set wildmode=list:longest
 
@@ -131,5 +149,4 @@ let g:ctrlp_custom_ignore = {
   \ 'dir' : '\.git$\|build$\|node_modules\|dist\|__pycache__' ,
   \ 'file' : '\v\.(pyc|so|dat|png|jpg)$'
   \ }
-
-autocmd FileType vue syntax sync fromstart
+"
