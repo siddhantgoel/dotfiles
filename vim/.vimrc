@@ -1,4 +1,9 @@
-call plug#begin(stdpath('data') . '/plugged')
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
 
 " general plugins
 Plug 'ctrlpvim/ctrlp.vim'
@@ -17,15 +22,16 @@ Plug 'isRuslan/vim-es6'
 Plug 'nathangrigg/vim-beancount'
 Plug 'plasticboy/vim-markdown'
 Plug 'posva/vim-vue'
-Plug 'psf/black'
 Plug 'rust-lang/rust.vim'
-Plug 'tomlion/vim-solidity'
 Plug 'tshirtman/vim-cython'
 Plug 'ziglang/zig.vim'
 
 " themes
 Plug 'altercation/vim-colors-solarized'
+Plug 'ayu-theme/ayu-vim'
 Plug 'endel/vim-github-colorscheme'
+Plug 'rakr/vim-one'
+Plug 'jonathanfilip/vim-lucius'
 
 call plug#end()
 
@@ -37,8 +43,8 @@ set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
+set guifont=Hack
 au FocusGained * :checktime
-set guifont=Fira\ Code:h10
 set incsearch
 set hlsearch
 set ruler
@@ -59,15 +65,8 @@ syntax on
 " the plugins.
 let mapleader=","
 
-if $TERM == "xterm-256color"
-    set t_co=256
-endif
-
 set guioptions-=m
 set guioptions-=T
-
-let g:python_host_prog = '$HOME/.virtualenvs/neovim-2/bin/python'
-let g:python3_host_prog = '$HOME/.virtualenvs/neovim-3/bin/python'
 
 " ================ Indentation ======================
 
@@ -136,8 +135,6 @@ let go_highlight_extra_types = 0
 let go_highlight_space_tab_error = 0
 let go_highlight_trailing_whitespace_error = 0
 
-let g:black_line_length = 79
-let g:black_skip_string_normalization = 1
 let g:go_version_warning = 0
 
 autocmd FileType vue syntax sync fromstart
