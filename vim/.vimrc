@@ -9,8 +9,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 
 " languages
