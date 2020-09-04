@@ -112,21 +112,11 @@ set nofoldenable        "dont fold by default
 " ================ Completion =======================
 
 set wildmode=list:longest
-set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
-set wildignore+=*vim/backups*
-set wildignore+=*sass-cache*
-set wildignore+=*DS_Store*
-set wildignore+=vendor/rails/**
-set wildignore+=vendor/cache/**
-set wildignore+=*.gem
-set wildignore+=log/**
-set wildignore+=tmp/**
-set wildignore+=*.png,*.jpg,*.gif
-set wildignore+=htmlcov/**
-set wildignore+=*.ipynb
 
-let NERDTreeIgnore = ['\.pyc$', '\.ipynb$', '__pycache__$', '^terraform.tfstate.*.backup', '\.so$']
+" enable ctrl-n and ctrl-p to scroll thru matches
+set wildmenu
+
+let NERDTreeIgnore = ['__pycache__$', '\.pyc$', '^terraform.tfstate.*.backup', '\.so$', 'node_modules$']
 
 let go_highlight_trailing_whitespace_error = 0
 let go_highlight_chan_whitespace_error = 0
@@ -135,5 +125,11 @@ let go_highlight_space_tab_error = 0
 let go_highlight_trailing_whitespace_error = 0
 
 let g:go_version_warning = 0
+
+" CtrlP
+let g:ctrlp_custom_ignore = {
+  \ 'dir' : '\.git$\|build$\|node_modules\|dist\|__pycache__' ,
+  \ 'file' : '\v\.(pyc|so|dat|png|jpg)$'
+  \ }
 
 autocmd FileType vue syntax sync fromstart
