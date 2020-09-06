@@ -29,6 +29,7 @@ Plug 'ziglang/zig.vim'
 " themes
 Plug 'altercation/vim-colors-solarized'
 Plug 'ayu-theme/ayu-vim'
+Plug 'everard/vim-aurora'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'rakr/vim-one'
 
