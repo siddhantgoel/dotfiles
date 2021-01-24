@@ -3,7 +3,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.vim/plugged')
+call plug#begin(stdpath('data') . '/plugged')
 
 " general plugins
 Plug 'ctrlpvim/ctrlp.vim'
@@ -44,7 +44,7 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
-set guifont=Hack
+set guifont=Hack:h10
 au FocusGained * :checktime
 set incsearch
 set hlsearch
