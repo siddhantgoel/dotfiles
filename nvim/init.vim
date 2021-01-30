@@ -32,6 +32,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'everard/vim-aurora'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'rakr/vim-one'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 call plug#end()
 
@@ -45,6 +46,7 @@ set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
 set guifont=Hack:h10
+colorscheme onehalflight
 au FocusGained * :checktime
 set incsearch
 set hlsearch
