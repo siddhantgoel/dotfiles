@@ -29,8 +29,8 @@ Plug 'ziglang/zig.vim'
 " themes
 Plug 'altercation/vim-colors-solarized'
 Plug 'ayu-theme/ayu-vim'
-Plug 'everard/vim-aurora'
 Plug 'jonathanfilip/vim-lucius'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'rakr/vim-one'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
@@ -46,11 +46,11 @@ set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
 set guifont=Hack:h10
-colorscheme onehalflight
 au FocusGained * :checktime
 set incsearch
 set hlsearch
 set ruler
+colorscheme PaperColor
 
 nnoremap <Space> :set hlsearch!<CR>
 
@@ -151,4 +151,3 @@ let g:ctrlp_custom_ignore = {
   \ 'dir' : '\.git$\|build$\|node_modules\|dist\|__pycache__' ,
   \ 'file' : '\v\.(pyc|so|dat|png|jpg)$'
   \ }
-"
