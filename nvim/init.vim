@@ -30,7 +30,6 @@ Plug 'ziglang/zig.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ayu-theme/ayu-vim'
 Plug 'jonathanfilip/vim-lucius'
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'rakr/vim-one'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
@@ -45,12 +44,11 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
-set guifont=Hack:h10
+set guifont=Ubuntu\ Mono:h12
 au FocusGained * :checktime
 set incsearch
 set hlsearch
 set ruler
-colorscheme PaperColor
 
 nnoremap <Space> :set hlsearch!<CR>
 
