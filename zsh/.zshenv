@@ -14,13 +14,3 @@ source $HOME/.poetry/env
 
 # npm
 export PATH="$HOME/.npm-packages/bin:$PATH"
-
-# rust
-export PATH="$HOME/.cargo/bin:$PATH"
-
-# go
-export GOPATH="$HOME/Work/go"
-export PATH="$PATH:$(go env GOPATH)/bin"
-
-# autojump
-source "/usr/share/autojump/autojump.zsh"
