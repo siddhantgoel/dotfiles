@@ -91,7 +91,6 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set textwidth=80
-set background=light
 
 " Display tabs and trailing spaces visually
 " set list listchars=tab:>-,trail:·
