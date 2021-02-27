@@ -20,10 +20,6 @@ setopt HIST_IGNORE_DUPS
 EDITOR=vim
 VISUAL=vim
 
-pdfmerge() {
-    gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ;
-}
-
 alias dock="docker-compose"
 
 if type nvim > /dev/null 2>&1; then

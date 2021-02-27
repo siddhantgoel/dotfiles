@@ -1,5 +1,7 @@
+# restic
 export RESTIC_PASSWORD_FILE=$HOME/.restic-password
 
+# pipx
 export PATH="$HOME/.local/bin:$PATH"
 
 # snaps
