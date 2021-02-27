@@ -4,8 +4,6 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 
-PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[green]%}%~ %{$reset_color%}%% "
-
 # editor
 
 EDITOR=vim
@@ -24,6 +22,8 @@ autoload -Uz compinit promptinit colors
 colors
 compinit
 promptinit
+
+PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[green]%}%~ %{$reset_color%}%% "
 
 alias dock="docker-compose"
 
