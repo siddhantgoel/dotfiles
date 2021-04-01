@@ -1,8 +1,6 @@
 # history
 
 HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
 
 # editor
 
@@ -15,15 +13,21 @@ unsetopt beep
 bindkey -e
 setopt HIST_IGNORE_DUPS
 
-# autoload
+# zplug
 
-autoload -Uz compinit promptinit colors
+source /usr/share/zplug/init.zsh
 
-colors
-compinit
-promptinit
+zplug "jackharrisonsherlock/common", as:theme
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
-PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[green]%}%~ %{$reset_color%}%% "
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load
 
 alias dock="docker-compose"
 
