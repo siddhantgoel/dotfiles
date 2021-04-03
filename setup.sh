@@ -7,6 +7,7 @@ if ! [ -x "$(command -v stow)" ]; then
   exit 1
 fi
 
+stow npm --target $HOME
 stow tmux --target $HOME
 stow zsh --target $HOME
 
