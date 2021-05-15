@@ -14,5 +14,17 @@ eval "$(pyenv virtualenv-init -)"
 
 source $HOME/.poetry/env
 
+# ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 # npm
 export PATH="$HOME/.npm-packages/bin:$PATH"
+
+# Go
+export GOPATH="$HOME/Work/go"
+export PATH="$GOPATH/bin:$PATH"
+
+# Rust
+source "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
