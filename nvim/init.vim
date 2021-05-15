@@ -12,6 +12,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'vimwiki/vimwiki'
 
 " languages
 Plug 'fatih/vim-go'
