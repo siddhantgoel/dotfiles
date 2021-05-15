@@ -17,7 +17,7 @@ setopt HIST_IGNORE_DUPS
 
 source /usr/share/zplug/init.zsh
 
-zplug "jackharrisonsherlock/common", as:theme
+zplug "romkatv/powerlevel10k", as:theme, depth:1
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 if ! zplug check --verbose; then
@@ -34,3 +34,6 @@ alias dock="docker-compose"
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
 fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

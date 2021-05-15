@@ -10,6 +10,7 @@ fi
 stow npm --target $HOME
 stow tmux --target $HOME
 stow zsh --target $HOME
+stow p10k --target $HOME
 
 stow glrnvim --target $HOME/.config
 stow crestic --target $HOME/.config/crestic
