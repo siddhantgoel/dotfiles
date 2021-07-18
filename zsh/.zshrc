@@ -35,5 +35,9 @@ if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
 fi
 
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

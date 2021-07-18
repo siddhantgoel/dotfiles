@@ -8,9 +8,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/snap/bin:$PATH"
 
 # python
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init --path)"
 
 source $HOME/.poetry/env
 
