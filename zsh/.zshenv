@@ -32,3 +32,7 @@ export PATH="$GOPATH/bin:$PATH"
 # Rust
 source "$HOME/.cargo/env"
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Fly
+export FLYCTL_INSTALL="$HOME/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
