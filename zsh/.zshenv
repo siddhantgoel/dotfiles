@@ -18,6 +18,10 @@ source $HOME/.poetry/env
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# n
+export N_PREFIX="$HOME/.n"
+export PATH="$N_PREFIX/bin:$PATH"
+
 # npm
 export PATH="$HOME/.npm-packages/bin:$PATH"
 
