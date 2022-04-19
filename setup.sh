@@ -12,7 +12,6 @@ stow tmux --target $HOME
 stow zsh --target $HOME
 stow p10k --target $HOME
 
-stow glrnvim --target $HOME/.config
 stow crestic --target $HOME/.config/crestic
 stow nvim --target $HOME/.config/nvim
 stow kitty --target $HOME/.config/kitty
