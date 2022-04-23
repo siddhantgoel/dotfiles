@@ -6,17 +6,15 @@ endif
 call plug#begin(stdpath('data') . '/plugged')
 
 " general plugins
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'fholgado/minibufexpl.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
-Plug 'vimwiki/vimwiki'
 
 " languages
 Plug 'fatih/vim-go'
-Plug 'godlygeek/tabular'
 Plug 'hashivim/vim-terraform'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'isRuslan/vim-es6'
@@ -145,8 +143,6 @@ let go_highlight_trailing_whitespace_error = 0
 
 let g:go_version_warning = 0
 
-" CtrlP
-let g:ctrlp_custom_ignore = {
-  \ 'dir' : '\.git$\|build$\|node_modules\|dist\|__pycache__' ,
-  \ 'file' : '\v\.(pyc|so|dat|png|jpg)$'
-  \ }
+" telescope
+nnoremap <C-p> <cmd>Telescope find_files<cr>
+nnoremap <C-g> <cmd>Telescope live_grep<cr>
