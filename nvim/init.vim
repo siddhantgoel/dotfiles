@@ -69,14 +69,6 @@ let mapleader=","
 set guioptions-=m
 set guioptions-=T
 
-" =========
-" Filetypes
-" =========
-
-autocmd BufNewFile,BufRead *.sls set filetype=yaml
-autocmd BufNewFile,BufRead *.lr set filetype=markdown
-autocmd FileType vue syntax sync fromstart
-
 " ===========
 " Indentation
 " ===========
@@ -130,11 +122,9 @@ set nofoldenable        "dont fold by default
 
 set wildmode=list:longest
 
+
 " enable ctrl-n and ctrl-p to scroll thru matches
 set wildmenu
-
-let NERDTreeIgnore = ['__pycache__$', '\.pyc$', '^terraform.tfstate.*.backup', '\.so$', 'node_modules$']
-
 let go_highlight_trailing_whitespace_error = 0
 let go_highlight_chan_whitespace_error = 0
 let go_highlight_extra_types = 0
