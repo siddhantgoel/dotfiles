@@ -1,5 +1,3 @@
-" config specific to GUI
-
 " ==========
 " Appearance
 " ==========

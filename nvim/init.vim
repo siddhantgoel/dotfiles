@@ -57,7 +57,7 @@ nnoremap <Space> :set hlsearch!<CR>
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
-"turn on syntax highlighting
+" turn on syntax highlighting
 syntax on
 
 " Change leader to a comma because the backslash is too far away
@@ -98,14 +98,11 @@ set noswapfile
 set nobackup
 set nowb
 
-" ===============
-" Persistent Undo
-" ===============
-"
-" Keep undo history across sessions, by storing in file.
-" Only works all the time.
+" ====
+" Undo
+" ====
 
-set undodir=~/.vim/backups
+set undodir=~/.vim/undo
 set undofile
 
 " =====
@@ -122,19 +119,21 @@ set nofoldenable        "dont fold by default
 
 set wildmode=list:longest
 
+" =======
+" Plugins
+" =======
+
 " NERDTree
 let NERDTreeShowHidden=1
 
-" enable ctrl-n and ctrl-p to scroll thru matches
-set wildmenu
+" vim-go
 let go_highlight_trailing_whitespace_error = 0
 let go_highlight_chan_whitespace_error = 0
 let go_highlight_extra_types = 0
 let go_highlight_space_tab_error = 0
 let go_highlight_trailing_whitespace_error = 0
-
 let g:go_version_warning = 0
 
-" telescope
+" Telescope
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-g> <cmd>Telescope live_grep<cr>
