@@ -122,6 +122,8 @@ set nofoldenable        "dont fold by default
 
 set wildmode=list:longest
 
+" NERDTree
+let NERDTreeShowHidden=1
 
 " enable ctrl-n and ctrl-p to scroll thru matches
 set wildmenu
