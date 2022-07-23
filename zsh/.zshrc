@@ -4,8 +4,8 @@ HISTFILE=~/.histfile
 
 # editor
 
-EDITOR=vim
-VISUAL=vim
+EDITOR=nvim
+VISUAL=nvim
 
 # options
 

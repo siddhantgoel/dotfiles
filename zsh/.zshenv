@@ -1,3 +1,6 @@
+# aliases
+alias vim=nvim
+
 # restic
 export RESTIC_PASSWORD_FILE=$HOME/.restic-password
 
