@@ -31,10 +31,6 @@ zplug load
 
 alias dock="docker-compose"
 
-if type nvim > /dev/null 2>&1; then
-  alias vim='nvim'
-fi
-
 # pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
