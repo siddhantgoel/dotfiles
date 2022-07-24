@@ -29,8 +29,6 @@ fi
 
 zplug load
 
-alias dock="docker-compose"
-
 # pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
