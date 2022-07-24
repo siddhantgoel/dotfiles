@@ -23,6 +23,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'posva/vim-vue'
 Plug 'rust-lang/rust.vim'
 Plug 'tshirtman/vim-cython'
+Plug 'vim-crystal/vim-crystal'
 Plug 'vim-ruby/vim-ruby'
 Plug 'ziglang/zig.vim'
 
