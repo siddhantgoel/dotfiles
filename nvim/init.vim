@@ -78,12 +78,21 @@ set guioptions-=T
 set autoindent
 set smartindent
 
+"  default text width
+set textwidth=80
+
+" spaces over tabs
 set smarttab
 set expandtab
-set softtabstop=4
+
+" default indentation settings
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
-set textwidth=80
+
+" indentation settings for specific filetypes
+au BufRead,BufNewFile *.rb setlocal tabstop=2 softtabstop=2 shiftwidth=2
+au BufRead,BufNewFile *.cr setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " Display tabs and trailing spaces visually
 " set list listchars=tab:>-,trail:·
