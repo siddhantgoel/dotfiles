@@ -134,7 +134,8 @@ set wildmode=list:longest
 " =======
 
 " NERDTree
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden = 1
+let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '^node_modules$', '^.git$']
 
 " vim-go
 let go_highlight_trailing_whitespace_error = 0
