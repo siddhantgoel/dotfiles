@@ -45,7 +45,7 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set showcmd                     "Show incomplete cmds down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
-set guifont=Ubuntu\ Mono:h12
+set guifont=Monaco:h12
 au FocusGained * :checktime
 set incsearch
 set hlsearch

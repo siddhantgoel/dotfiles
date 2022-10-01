@@ -3,4 +3,4 @@
 " ==========
 
 colorscheme one
-set background=dark
+set background=light
