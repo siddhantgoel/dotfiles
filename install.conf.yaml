@@ -12,7 +12,7 @@
     ~/.config/crestic/password: crestic/password
     # kitty
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
-    ~/.config/kitty/OneDark.conf: kitty/OneDark.conf
+    ~/.config/kitty/TangoLight.conf: kitty/TangoLight.conf
     # npm
     ~/.npmrc: npm/npmrc
     # nvim
