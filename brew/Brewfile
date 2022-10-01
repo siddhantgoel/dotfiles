@@ -1,0 +1,12 @@
+brew "age"
+brew "neovim"
+brew "poetry"
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "rbenv"
+brew "wget"
+brew "zola"
+brew "zplug"
+
+cask "kitty"
+cask "vimr"
