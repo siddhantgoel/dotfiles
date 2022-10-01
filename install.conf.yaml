@@ -23,7 +23,6 @@
     # tmux
     ~/.tmux.conf: tmux/tmux.conf
     # zsh
-    ~/.zshenv: zsh/zshenv
     ~/.zshrc: zsh/zshrc
 
 - create:
