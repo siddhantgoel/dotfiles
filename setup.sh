@@ -11,7 +11,7 @@ if ! [ -x "$(command -v dotbot)" ]; then
 fi
 
 # decrypt crestic password
-age --decrypt --identity ~/.age/keys.txt --output crestic/password crestic/password.enc
+age --decrypt --identity ~/.config/age/keys.txt --output crestic/password crestic/password.enc
 
 # install
 dotbot --config-file install.conf.yaml
