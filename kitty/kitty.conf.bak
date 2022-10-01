@@ -1,5 +1,3 @@
-shell_integration no-cursor
-
 # Fonts
 
 font_family      Monaco
@@ -11,7 +9,6 @@ bold_italic_font auto
 # Cursor
 
 cursor_blink_interval 0
-cursor_shape block
 
 # URL handling
 
@@ -41,4 +38,10 @@ map kitty_mod+right next_window
 
 # theme
 
+include OneDark.conf
+
+
+# BEGIN_KITTY_THEME
+# One Half Light
 include current-theme.conf
+# END_KITTY_THEME
