@@ -1,6 +1,7 @@
 tap "go-task/tap"
 
 brew "age"
+brew "bitwarden-cli"
 brew "fd"
 brew "go-task/tap/go-task"
 brew "neovim"
