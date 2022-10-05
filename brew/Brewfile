@@ -18,4 +18,5 @@ brew "zola"
 brew "zplug"
 
 cask "kitty"
+cask "slack"
 cask "vimr"
