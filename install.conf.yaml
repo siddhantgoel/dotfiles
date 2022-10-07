@@ -12,7 +12,8 @@
     ~/.config/crestic/password: crestic/password
     # kitty
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
-    ~/.config/kitty/TangoLight.conf: kitty/TangoLight.conf
+    ~/.config/kitty/tango-light.conf: kitty/tango-light.conf
+    ~/.config/kitty/nord.conf: kitty/nord.conf
     # npm
     ~/.npmrc: npm/npmrc
     # nvim
