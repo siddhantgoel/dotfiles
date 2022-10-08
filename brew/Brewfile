@@ -1,9 +1,11 @@
 tap "go-task/tap"
+tap "benbjohnson/litestream"
 
 brew "age"
 brew "bitwarden-cli"
 brew "fd"
 brew "go-task/tap/go-task"
+brew "litestream"
 brew "neovim"
 brew "npm"
 brew "poetry"
