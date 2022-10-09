@@ -28,6 +28,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'ziglang/zig.vim'
 
 " themes
+Plug 'Mofiqul/dracula.nvim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ayu-theme/ayu-vim'
