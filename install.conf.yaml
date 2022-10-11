@@ -12,12 +12,12 @@
     ~/.config/crestic/password: crestic/password
     # kitty
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
-    ~/.config/kitty/dracula.conf: kitty/dracula.conf
-    ~/.config/kitty/everforest.conf: kitty/everforest.conf
-    ~/.config/kitty/nord.conf: kitty/nord.conf
-    ~/.config/kitty/one-dark.conf: kitty/one-dark.conf
-    ~/.config/kitty/one-half-dark.conf: kitty/one-half-dark.conf
-    ~/.config/kitty/tango-light.conf: kitty/tango-light.conf
+    ~/.config/kitty/themes/dracula.conf: kitty/dracula.conf
+    ~/.config/kitty/themes/everforest.conf: kitty/everforest.conf
+    ~/.config/kitty/themes/nord.conf: kitty/nord.conf
+    ~/.config/kitty/themes/one-dark.conf: kitty/one-dark.conf
+    ~/.config/kitty/themes/one-half-dark.conf: kitty/one-half-dark.conf
+    ~/.config/kitty/themes/tango-light.conf: kitty/tango-light.conf
     # npm
     ~/.npmrc: npm/npmrc
     # nvim
@@ -33,4 +33,5 @@
 - create:
     - ~/.config/crestic
     - ~/.config/kitty
+    - ~/.config/kitty/themes
     - ~/.config/nvim
