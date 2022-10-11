@@ -22,6 +22,7 @@ brew "wget"
 brew "zola"
 brew "zplug"
 
+cask "discord"
 cask "kitty"
 cask "signal"
 cask "slack"
