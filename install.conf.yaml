@@ -15,6 +15,7 @@
     ~/.config/kitty/dracula.conf: kitty/dracula.conf
     ~/.config/kitty/everforest.conf: kitty/everforest.conf
     ~/.config/kitty/nord.conf: kitty/nord.conf
+    ~/.config/kitty/one-half-dark.conf: kitty/one-half-dark.conf
     ~/.config/kitty/tango-light.conf: kitty/tango-light.conf
     # npm
     ~/.npmrc: npm/npmrc
