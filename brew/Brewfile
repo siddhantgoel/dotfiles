@@ -23,6 +23,7 @@ brew "wget"
 brew "zola"
 brew "zplug"
 
+cask "bitwarden"
 cask "discord"
 cask "kitty"
 cask "signal"
