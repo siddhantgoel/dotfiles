@@ -62,3 +62,6 @@ export PATH="$HOME/.npm-packages/bin:$PATH"
 # Go
 export GOPATH="$HOME/Work/go"
 export PATH="$GOPATH/bin:$PATH"
+
+# Rust
+source "$HOME/.cargo/env"
