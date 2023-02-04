@@ -14,6 +14,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 
 " languages
+Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
 Plug 'hynek/vim-python-pep8-indent'
