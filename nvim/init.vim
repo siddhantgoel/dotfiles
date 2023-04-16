@@ -35,6 +35,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'rakr/vim-one'
+Plug 'sainnhe/everforest'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 call plug#end()
