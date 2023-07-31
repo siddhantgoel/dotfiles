@@ -5,6 +5,7 @@ tap "supabase/tap"
 
 brew "age"
 brew "bitwarden-cli"
+brew "colima"
 brew "dotbot"
 brew "fd"
 brew "flyctl"
