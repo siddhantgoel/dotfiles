@@ -21,7 +21,6 @@
     # npm
     ~/.npmrc: npm/npmrc
     # nvim
-    ~/.config/nvim/ginit.vim: nvim/ginit.vim
     ~/.config/nvim/init.vim: nvim/init.vim
     # p10k
     ~/.p10k.zsh: p10k/p10k.zsh
