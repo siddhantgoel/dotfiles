@@ -44,12 +44,13 @@ call plug#end()
 " General Config
 " ==============
 
-set number                      "Line numbers are good
-set backspace=indent,eol,start  "Allow backspace in insert mode
-set showcmd                     "Show incomplete cmds down the bottom
-set gcr=a:blinkon0              "Disable cursor blink
-set autoread                    "Reload files changed outside vim
+set number                      " Line numbers
+set backspace=indent,eol,start  " Allow backspace
+set showcmd                     " Show incomplete cmds down the bottom
+set gcr=a:blinkon0              " Disable cursor blink
+set autoread                    " Reload files changed outside vim
 set guifont=Monaco:h12
+set guicursor=n-v-c-sm:block,i-ci-ve:ver25-Cursor,r-cr-o:hor20
 au FocusGained * :checktime
 set incsearch
 set hlsearch
@@ -65,24 +66,16 @@ set hidden
 " turn on syntax highlighting
 syntax on
 
-" Change leader to a comma because the backslash is too far away
-" That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
-" the plugins.
 let mapleader=","
-
-set guioptions-=m
-set guioptions-=T
 
 " ===========
 " Indentation
 " ===========
 
-" Comment the following two lines to switch back the config
 set autoindent
 set smartindent
 
-"  default text width
+" default text width
 set textwidth=80
 
 " spaces over tabs
@@ -102,7 +95,7 @@ au BufRead,BufNewFile *.cr setlocal tabstop=2 softtabstop=2 shiftwidth=2
 " set list listchars=tab:>-,trail:·
 
 set wrap
-set linebreak    "Wrap lines at convenient points
+set linebreak    " Wrap lines at convenient points
 
 " ==========
 " Swap Files
@@ -123,9 +116,9 @@ set undofile
 " Folds
 " =====
 
-set foldmethod=manual   "fold manually
-set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
+set foldmethod=manual   " fold manually
+set foldnestmax=10      " deepest fold is 10 levels
+set nofoldenable        " dont fold by default
 
 " ==========
 " Completion
@@ -152,3 +145,12 @@ let g:go_version_warning = 0
 " Telescope
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-g> <cmd>Telescope live_grep<cr>
+
+" Neovide
+if exists("g:neovide")
+    let g:neovide_hide_mouse_when_typing = v:false
+    let g:neovide_cursor_animation_length = 0
+
+    colorscheme one
+    set background=light
+endif
