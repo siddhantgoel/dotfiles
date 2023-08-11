@@ -23,6 +23,7 @@
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/mappings.lua: nvim/lua/mappings.lua
+    ~/.config/nvim/lua/onload.lua: nvim/lua/onload.lua
     ~/.config/nvim/lua/packages.lua: nvim/lua/packages.lua
     ~/.config/nvim/lua/plugins.lua: nvim/lua/plugins.lua
     ~/.config/nvim/lua/settings.lua: nvim/lua/settings.lua

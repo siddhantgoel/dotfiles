@@ -11,9 +11,16 @@ g.go_highlight_extra_types = 0
 g.go_highlight_space_tab_error = 0
 g.go_highlight_trailing_whitespace_error = 0
 
--- NERDTree
-g.NERDTreeShowHidden = 1
-g.NERDTreeIgnore = {'.pyc$', '^__pycache__$', '^node_modules$', '^.git$'}
+-- nvim-tree
+require('nvim-tree').setup({
+    actions = {
+        open_file = {
+            window_picker = {
+                enable = false
+            }
+        }
+    },
+})
 
 -- Telescope
 map('n', '<C-p>', builtin.find_files, {})

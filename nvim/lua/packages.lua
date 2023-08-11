@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
     use 'junegunn/goyo.vim'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
-    use 'preservim/nerdtree'
+    use 'nvim-tree/nvim-tree.lua'
     use 'scrooloose/nerdcommenter'
     use 'tpope/vim-surround'
 
