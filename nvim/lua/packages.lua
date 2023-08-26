@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 
     -- general
     use 'junegunn/goyo.vim'
+    use 'natecraddock/workspaces.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-tree/nvim-tree.lua'
