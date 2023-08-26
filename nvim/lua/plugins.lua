@@ -1,3 +1,4 @@
+local telescope = require('telescope')
 local builtin = require('telescope.builtin')
 local g = vim.g
 local map = vim.keymap.set
@@ -17,3 +18,11 @@ require('nvim-tree').setup()
 -- telescope
 map('n', '<C-p>', builtin.find_files, {})
 map('n', '<C-g>', builtin.live_grep, {})
+
+-- workspaces
+require("workspaces").setup({
+    hooks = {
+        open = { "NvimTreeOpen" },
+    }
+})
+telescope.load_extension("workspaces")
