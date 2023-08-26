@@ -18,8 +18,6 @@
     ~/.config/kitty/themes/one-dark.conf: kitty/one-dark.conf
     ~/.config/kitty/themes/one-half-dark.conf: kitty/one-half-dark.conf
     ~/.config/kitty/themes/tango-light.conf: kitty/tango-light.conf
-    # npm
-    ~/.npmrc: npm/npmrc
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/mappings.lua: nvim/lua/mappings.lua
