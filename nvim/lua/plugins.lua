@@ -12,16 +12,8 @@ g.go_highlight_space_tab_error = 0
 g.go_highlight_trailing_whitespace_error = 0
 
 -- nvim-tree
-require('nvim-tree').setup({
-    actions = {
-        open_file = {
-            window_picker = {
-                enable = false
-            }
-        }
-    },
-})
+require('nvim-tree').setup()
 
--- Telescope
+-- telescope
 map('n', '<C-p>', builtin.find_files, {})
 map('n', '<C-g>', builtin.live_grep, {})
