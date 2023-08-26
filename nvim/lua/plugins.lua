@@ -13,16 +13,19 @@ g.go_highlight_space_tab_error = 0
 g.go_highlight_trailing_whitespace_error = 0
 
 -- nvim-tree
-require('nvim-tree').setup()
+require('nvim-tree').setup({
+    update_cwd = true
+})
 
 -- telescope
 map('n', '<C-p>', builtin.find_files, {})
 map('n', '<C-g>', builtin.live_grep, {})
+map('n', '<C-k>', telescope.extensions.workspaces.workspaces, {})
 
 -- workspaces
 require("workspaces").setup({
     hooks = {
-        open = { "NvimTreeOpen" },
+        open = { "NvimTreeRefresh" },
     }
 })
 telescope.load_extension("workspaces")
