@@ -78,3 +78,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bun completions
 [ -s "$HOME/.reflex/.bun/_bun" ] && source "$HOME/.reflex/.bun/_bun"
+
+# pkgconfig
+export PKG_CONFIG_PATH="/opt/homebrew/opt/mysql-client/lib/pkgconfig"
