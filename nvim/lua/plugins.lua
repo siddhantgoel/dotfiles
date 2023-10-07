@@ -25,7 +25,16 @@ map('n', '<C-k>', telescope.extensions.workspaces.workspaces, {})
 -- workspaces
 require("workspaces").setup({
     hooks = {
-        open = { "NvimTreeRefresh" },
+        open_pre = {
+            "SessionsStop",
+            "silent %bdelete!",
+        },
+        open = {
+            "NvimTreeRefresh",
+            function()
+                require("sessions").load(nil, { silent = true })
+            end
+        },
     }
 })
 telescope.load_extension("workspaces")
