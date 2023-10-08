@@ -22,18 +22,23 @@ map('n', '<C-p>', builtin.find_files, {})
 map('n', '<C-g>', builtin.live_grep, {})
 map('n', '<C-k>', telescope.extensions.workspaces.workspaces, {})
 
+-- sessions
+require("sessions").setup({
+    session_filepath = vim.fn.stdpath("data") .. "/sessions",
+    absolute = true,
+})
+
 -- workspaces
 require("workspaces").setup({
     hooks = {
         open_pre = {
-            "SessionsStop",
+            "SessionsSave",
             "silent %bdelete!",
         },
         open = {
+            "SessionsLoad",
+            "NvimTreeOpen",
             "NvimTreeRefresh",
-            function()
-                require("sessions").load(nil, { silent = true })
-            end
         },
     }
 })
