@@ -38,7 +38,6 @@ require("workspaces").setup({
         open = {
             "SessionsLoad",
             "NvimTreeOpen",
-            "NvimTreeRefresh",
         },
     }
 })
