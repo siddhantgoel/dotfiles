@@ -32,6 +32,7 @@ brew "supabase"
 brew "tree"
 brew "watch"
 brew "wget"
+brew "zig"
 brew "zola"
 brew "zplug"
 
