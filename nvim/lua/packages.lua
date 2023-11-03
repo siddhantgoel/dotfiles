@@ -53,9 +53,13 @@ return require('packer').startup(function(use)
     use 'altercation/vim-colors-solarized'
     use 'arcticicestudio/nord-vim'
     use 'ayu-theme/ayu-vim'
+    use 'folke/tokyonight.nvim'
     use 'jonathanfilip/vim-lucius'
+    use 'kepano/flexoki-neovim'
     use 'rakr/vim-one'
     use 'sainnhe/everforest'
+    use 'savq/melange-nvim'
+    use { 'catppuccin/nvim', as = 'catppuccin' }
     use {'sonph/onehalf', rtp = 'vim/'}
 
     -- Automatically set up your configuration after cloning packer.nvim
