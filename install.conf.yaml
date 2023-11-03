@@ -21,6 +21,8 @@
     ~/.config/kitty/themes/one-half-dark.conf: kitty/one-half-dark.conf
     ~/.config/kitty/themes/catppuccin-latte.conf: kitty/catppuccin-latte.conf
     ~/.config/kitty/themes/tango-light.conf: kitty/tango-light.conf
+    ~/.config/kitty/themes/github-light.conf: kitty/github-light.conf
+    ~/.config/kitty/themes/onehalf-light.conf: kitty/onehalf-light.conf
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/mappings.lua: nvim/lua/mappings.lua

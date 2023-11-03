@@ -56,6 +56,7 @@ return require('packer').startup(function(use)
     use 'folke/tokyonight.nvim'
     use 'jonathanfilip/vim-lucius'
     use 'kepano/flexoki-neovim'
+    use 'projekt0n/github-nvim-theme'
     use 'rakr/vim-one'
     use 'sainnhe/everforest'
     use 'savq/melange-nvim'

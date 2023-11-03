@@ -57,6 +57,6 @@ if vim.g.neovide then
     g.neovide_hide_mouse_when_typing = false
     g.neovide_cursor_animation_length = 0
 
-    cmd("colorscheme one")
+    cmd("colorscheme github_light")
     set.background = 'light'
 end
