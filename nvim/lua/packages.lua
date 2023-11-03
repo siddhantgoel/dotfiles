@@ -35,13 +35,16 @@ return require('packer').startup(function(use)
 
     -- languages
     use 'MaxMEllon/vim-jsx-pretty'
-    use 'fatih/vim-go'
     use 'hashivim/vim-terraform'
     use 'hynek/vim-python-pep8-indent'
     use 'isRuslan/vim-es6'
     use 'nathangrigg/vim-beancount'
+    use 'neovim/nvim-lspconfig'
+    use 'nvim-treesitter/nvim-treesitter'
     use 'plasticboy/vim-markdown'
     use 'posva/vim-vue'
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua'
     use 'rust-lang/rust.vim'
     use 'tshirtman/vim-cython'
     use 'vim-crystal/vim-crystal'
