@@ -1,2 +1,4 @@
 brew/Brewfile.lock.json
+
 crestic/password
+crestic/conf.d/home.cfg
