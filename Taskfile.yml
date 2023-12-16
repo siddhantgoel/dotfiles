@@ -1,0 +1,48 @@
+version: '3'
+
+vars:
+  AGE_KEYS: "~/.config/age/keys.txt"
+
+tasks:
+  setup:
+    cmds:
+      - task: brew
+      - task: age
+      - task: dotbot
+
+  brew:
+    desc: Install packages using Homebrew
+    cmds:
+      - brew bundle install
+    dir: brew
+    preconditions:
+      - command -v brew
+
+  age:
+    desc: Decrypt restic keys
+    cmds:
+      - age --decrypt --identity {{.AGE_KEYS}} --output crestic/password crestic/password.enc
+      - age --decrypt --identity {{.AGE_KEYS}} --output crestic/conf.d/backblaze.cfg crestic/backblaze.cfg.enc
+    preconditions:
+      - command -v age
+
+  dotbot:
+    desc: Symlink configuration files
+    cmds:
+      - dotbot --config-file install.conf.yaml
+    preconditions:
+      - command -v dotbot
+
+  encrypt:
+    desc: Encrypt file
+    cmds:
+      - age --encrypt --identity {{.AGE_KEYS}} {{.CLI_ARGS}}
+    preconditions:
+      - command -v age
+
+  decrypt:
+    desc: Decrypt file
+    cmds:
+      - age --decrypt --identity {{.AGE_KEYS}} {{.CLI_ARGS}}
+    preconditions:
+      - command -v age
