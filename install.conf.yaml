@@ -7,7 +7,7 @@
 
 - link:
     # crestic
-    ~/.config/crestic/crestic.cfg: crestic/crestic.cfg
+    ~/.config/crestic/config.cfg: crestic/config.cfg
     ~/.config/crestic/excludes: crestic/excludes
     ~/.config/crestic/password: crestic/password
     # kitty
