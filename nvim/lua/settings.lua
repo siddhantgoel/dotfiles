@@ -54,8 +54,9 @@ set.wildmode = 'list:longest'
 
 -- neovide
 if vim.g.neovide then
-    g.neovide_hide_mouse_when_typing = false
+    g.neovide_hide_mouse_when_typing = true
     g.neovide_cursor_animation_length = 0
+    g.neovide_scroll_animation_length = 0
 
     cmd("colorscheme github_light")
     set.background = 'light'
