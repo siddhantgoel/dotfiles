@@ -25,7 +25,6 @@ return require('packer').startup(function(use)
 
     -- general
     use 'Exafunction/codeium.vim'
-    use 'astral-sh/ruff-lsp'
     use 'drzel/vim-gui-zoom'
     use 'junegunn/goyo.vim'
     use 'natecraddock/sessions.nvim'
@@ -38,9 +37,8 @@ return require('packer').startup(function(use)
 
     -- languages
     use 'MaxMEllon/vim-jsx-pretty'
+    use 'astral-sh/ruff-lsp'
     use 'hashivim/vim-terraform'
-    use 'hynek/vim-python-pep8-indent'
-    use 'isRuslan/vim-es6'
     use 'nathangrigg/vim-beancount'
     use 'neovim/nvim-lspconfig'
     use 'nvim-treesitter/nvim-treesitter'
