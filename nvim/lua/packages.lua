@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 
     -- general
     use 'Exafunction/codeium.vim'
+    use 'astral-sh/ruff-lsp'
     use 'drzel/vim-gui-zoom'
     use 'junegunn/goyo.vim'
     use 'natecraddock/sessions.nvim'
