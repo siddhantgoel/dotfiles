@@ -9,6 +9,8 @@ set.guifont = 'Monaco:h12'      -- GUI font/size
 set.ruler = true                -- line and column number of cursor position
 set.hidden = true               -- buffers can exist without being in a window
 set.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25-Cursor,r-cr-o:hor20,a:blinkon0'
+cmd("colorscheme github_light")
+set.background = 'light'
 
 -- behavior
 set.autoread = true                 -- reload files changed outside Neovim
@@ -57,7 +59,4 @@ if vim.g.neovide then
     g.neovide_hide_mouse_when_typing = true
     g.neovide_cursor_animation_length = 0
     g.neovide_scroll_animation_length = 0
-
-    cmd("colorscheme github_light")
-    set.background = 'light'
 end
