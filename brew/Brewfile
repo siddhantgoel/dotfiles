@@ -2,7 +2,6 @@ tap "benbjohnson/litestream"
 tap "f1bonacc1/tap"
 tap "go-task/tap"
 tap "stripe/stripe-cli"
-tap "supabase/tap"
 
 brew "age"
 brew "bitwarden-cli"
