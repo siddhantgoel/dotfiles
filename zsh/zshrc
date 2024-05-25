@@ -46,9 +46,6 @@ alias dock="docker-compose"
 # pipx
 export PATH="$HOME/.local/bin:$PATH"
 
-# snaps
-export PATH="/snap/bin:$PATH"
-
 # python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$HOME/.pyenv/bin:$PATH"
