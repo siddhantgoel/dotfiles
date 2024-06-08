@@ -22,8 +22,12 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # prompt
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
+
 autoload -Uz promptinit; promptinit
-prompt pure
+prompt typewritten
+
+export TYPEWRITTEN_PROMPT_LAYOUT="pure"
+export TYPEWRITTEN_CURSOR="block"
 
 # direnv
 eval "$(direnv hook zsh)"
