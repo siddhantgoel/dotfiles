@@ -1,9 +1,6 @@
-# history
+# basics
 
 HISTFILE=~/.histfile
-
-# editor
-
 EDITOR=nvim
 VISUAL=nvim
 
@@ -13,35 +10,23 @@ unsetopt beep
 bindkey -e
 setopt HIST_IGNORE_DUPS
 
-# zplug
-
-export ZPLUG_HOME=/opt/homebrew/opt/zplug
-source $ZPLUG_HOME/init.zsh
-
-zplug "romkatv/powerlevel10k", as:theme, depth:1
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
-
-zplug load
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# aliases
+alias vim=nvim
+alias dock="docker-compose"
 
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# syntax highlighting
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# prompt
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+autoload -Uz promptinit; promptinit
+prompt pure
+
 # direnv
 eval "$(direnv hook zsh)"
-
-# aliases
-alias vim=nvim
-alias dock="docker-compose"
 
 # pipx
 export PATH="$HOME/.local/bin:$PATH"
