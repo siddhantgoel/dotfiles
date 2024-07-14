@@ -9,7 +9,7 @@
 {
   "autosave": "off",
   "cursor_blink": false,
-  "theme": "One Light",
+  "theme": "Github Light",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -18,6 +18,8 @@
   "ui_font_size": 14,
   "buffer_font_size": 12,
   "buffer_font_family": "Monaco",
+  "preferred_line_length": 88,
+  "soft_wrap": "preferred_line_length",
   "languages": {
     "Python": {
       "formatter": {
@@ -27,6 +29,9 @@
         }
       },
       "format_on_save": "on"
+    },
+    "HTML": {
+      "format_on_save": "off"
     }
   }
 }
