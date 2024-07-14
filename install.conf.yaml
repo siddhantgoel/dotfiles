@@ -26,11 +26,10 @@
     ~/.config/kitty/themes/onehalf-light.conf: kitty/onehalf-light.conf
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
-    ~/.config/nvim/lua/mappings.lua: nvim/lua/mappings.lua
-    ~/.config/nvim/lua/onload.lua: nvim/lua/onload.lua
-    ~/.config/nvim/lua/packages.lua: nvim/lua/packages.lua
-    ~/.config/nvim/lua/plugins.lua: nvim/lua/plugins.lua
-    ~/.config/nvim/lua/settings.lua: nvim/lua/settings.lua
+    ~/.config/nvim/lua/01-base.lua: nvim/lua/01-base.lua
+    ~/.config/nvim/lua/02-packer.lua: nvim/lua/02-packer.lua
+    ~/.config/nvim/lua/03-plugins.lua: nvim/lua/03-plugins.lua
+    ~/.config/nvim/lua/04-onload.lua: nvim/lua/04-onload.lua
     # p10k
     ~/.p10k.zsh: p10k/p10k.zsh
     # tmux

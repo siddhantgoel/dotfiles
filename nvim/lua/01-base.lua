@@ -1,5 +1,6 @@
 local cmd = vim.cmd
 local g = vim.g
+local keymap = vim.keymap
 local set = vim.opt
 
 -- appearance
@@ -22,13 +23,12 @@ g.mapleader = ','
 -- search
 set.incsearch = true
 set.hlsearch = true
+keymap.set('n', '<Space>', function() vim.cmd('set hlsearch!') end)
 
 -- syntax
 cmd 'syntax on'
 
 -- indentation
-set.autoindent = true
-set.smartindent = true
 set.textwidth = 88
 set.smarttab = true
 set.expandtab = true
@@ -53,6 +53,10 @@ set.foldenable = false
 
 -- completions
 set.wildmode = 'list:longest'
+
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- neovide
 if vim.g.neovide then
