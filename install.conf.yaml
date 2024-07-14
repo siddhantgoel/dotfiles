@@ -35,6 +35,8 @@
     ~/.p10k.zsh: p10k/p10k.zsh
     # tmux
     ~/.tmux.conf: tmux/tmux.conf
+    # zed
+    ~/.config/zed/settings.json: zed/settings.json
     # zsh
     ~/.zshrc: zsh/zshrc
 
@@ -45,3 +47,4 @@
     - ~/.config/kitty/themes
     - ~/.config/nvim
     - ~/.config/nvim/lua
+    - ~/.config/zed
