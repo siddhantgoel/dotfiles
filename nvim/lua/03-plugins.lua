@@ -9,6 +9,7 @@ require 'nvim-treesitter.configs'.setup {
         "css",
         "gitignore",
         "html",
+        "htmldjango",
         "javascript",
         "json",
         "lua",
