@@ -66,3 +66,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # pkgconfig
 export PKG_CONFIG_PATH="/opt/homebrew/opt/mysql-client/lib/pkgconfig"
+
+# PostgreSQL
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
