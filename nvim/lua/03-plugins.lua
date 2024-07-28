@@ -56,14 +56,27 @@ require('lspconfig').ruff_lsp.setup {
     }
 }
 
+-- sessions
+require('sessions').setup({
+    session_filepath = vim.fn.stdpath("data") .. '/sessions',
+    absolute = true,
+})
+
 -- workspaces
 require('workspaces').setup {
-    path = vim.fn.stdpath("data") .. "/workspaces",
+    path = vim.fn.stdpath("data") .. '/workspaces',
     cd_type = "global",
     sort = true,
     mru_sort = true,
     hooks = {
-        open = "NvimTreeOpen",
+        open_pre = {
+            "SessionsSave",
+            "silent %bdelete!",
+        },
+        open = {
+            "SessionsLoad",
+            "NvimTreeOpen",
+        }
     }
 }
 

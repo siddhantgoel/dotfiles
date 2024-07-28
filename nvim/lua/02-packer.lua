@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
     use 'drzel/vim-gui-zoom'
     use 'junegunn/goyo.vim'
     use 'natecraddock/workspaces.nvim'
+    use 'natecraddock/sessions.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-tree/nvim-tree.lua'
