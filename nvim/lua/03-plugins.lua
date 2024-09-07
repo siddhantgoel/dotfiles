@@ -20,6 +20,7 @@ require 'nvim-treesitter.configs'.setup {
         "ruby",
         "rust",
         "toml",
+        "typescript",
         "vim",
         "vimdoc",
         "yaml",
