@@ -23,7 +23,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # prompt
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 
-autoload -Uz promptinit; promptinit
+autoload -Uz compinit promptinit; compinit; promptinit;
 prompt typewritten
 
 export TYPEWRITTEN_PROMPT_LAYOUT="pure"
