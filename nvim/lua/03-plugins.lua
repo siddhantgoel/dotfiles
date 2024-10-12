@@ -11,6 +11,7 @@ require 'nvim-treesitter.configs'.setup {
         "html",
         "htmldjango",
         "javascript",
+        "just",
         "json",
         "lua",
         "markdown",
