@@ -39,6 +39,7 @@ brew "watch"
 brew "wget"
 brew "zig"
 brew "zola"
+brew "zoxide"
 brew "zplug"
 brew "zsh-syntax-highlighting"
 
