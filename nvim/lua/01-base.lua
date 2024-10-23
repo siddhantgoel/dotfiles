@@ -10,7 +10,7 @@ set.guifont = 'Monaco:h12'      -- GUI font/size
 set.ruler = true                -- line and column number of cursor position
 set.hidden = true               -- buffers can exist without being in a window
 set.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25-Cursor,r-cr-o:hor20,a:blinkon0'
-cmd("colorscheme github_light")
+cmd("colorscheme github_light_high_contrast")
 set.background = 'light'
 
 -- behavior
