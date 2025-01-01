@@ -50,7 +50,7 @@ map('n', '<C-k>', telescope.extensions.workspaces.workspaces, {})
 telescope.load_extension("workspaces")
 
 -- lsp
-require('lspconfig').ruff_lsp.setup {
+require('lspconfig').ruff.setup {
     init_options = {
         settings = {
             args = {}

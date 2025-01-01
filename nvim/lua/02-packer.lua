@@ -37,7 +37,6 @@ return require('packer').startup(function(use)
     use 'tpope/vim-surround'
 
     -- languages
-    use 'astral-sh/ruff-lsp'
     use 'neovim/nvim-lspconfig'
     use 'nvim-treesitter/nvim-treesitter'
 
