@@ -7,9 +7,19 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "assistant": {
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "features": {
+    "inline_completion_provider": "none"
+  },
   "autosave": "off",
   "cursor_blink": false,
-  "theme": "Github Light",
+  "theme": "Github Light Tritanopia",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -31,6 +41,9 @@
       "format_on_save": "on"
     },
     "HTML": {
+      "format_on_save": "off"
+    },
+    "Markdown": {
       "format_on_save": "off"
     }
   }
