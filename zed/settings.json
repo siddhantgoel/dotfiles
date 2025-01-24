@@ -14,20 +14,21 @@
     },
     "version": "2"
   },
-  "features": {
-    "inline_completion_provider": "none"
-  },
   "autosave": "off",
   "cursor_blink": false,
-  "theme": "Github Light Tritanopia",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
   "vim_mode": true,
   "ui_font_size": 14,
-  "buffer_font_size": 12,
   "buffer_font_family": "Monaco",
+  "buffer_font_size": 12,
   "preferred_line_length": 88,
   "soft_wrap": "preferred_line_length",
   "languages": {
