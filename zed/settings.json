@@ -29,8 +29,8 @@
   "ui_font_size": 14,
   "buffer_font_family": "Monaco",
   "buffer_font_size": 12,
-  "preferred_line_length": 88,
   "soft_wrap": "preferred_line_length",
+  "preferred_line_length": 88,
   "languages": {
     "Python": {
       "formatter": {
@@ -42,10 +42,8 @@
       "format_on_save": "on"
     },
     "HTML": {
-      "format_on_save": "off"
-    },
-    "Markdown": {
-      "format_on_save": "off"
+      "format_on_save": "off",
+      "preferred_line_length": 100
     }
   }
 }
