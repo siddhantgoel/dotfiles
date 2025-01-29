@@ -18,8 +18,8 @@
   "cursor_blink": false,
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark"
+    "light": "Github Light",
+    "dark": "Github Dark"
   },
   "telemetry": {
     "diagnostics": false,
@@ -31,6 +31,7 @@
   "buffer_font_size": 12,
   "soft_wrap": "preferred_line_length",
   "preferred_line_length": 88,
+  "max_tabs": 1,
   "languages": {
     "Python": {
       "formatter": {
