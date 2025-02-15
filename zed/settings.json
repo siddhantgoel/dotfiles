@@ -34,6 +34,10 @@
   "max_tabs": 1,
   "file_scan_exclusions": ["**/.git", ".venv", "__pycache__"],
   "languages": {
+    "Beancount": {
+      "format_on_save": "off",
+      "preferred_line_length": 120
+    },
     "Python": {
       "language_servers": ["ruff"],
       "format_on_save": "on",
@@ -52,7 +56,7 @@
     },
     "HTML": {
       "format_on_save": "off",
-      "preferred_line_length": 100
+      "preferred_line_length": 120
     }
   }
 }
