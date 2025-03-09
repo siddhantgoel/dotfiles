@@ -43,6 +43,7 @@ brew "zsh-syntax-highlighting"
 
 cask "bitwarden"
 cask "bruno"
+cask "claude"
 cask "discord"
 cask "kitty"
 cask "libreoffice"
