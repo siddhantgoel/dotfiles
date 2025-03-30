@@ -58,5 +58,8 @@
       "format_on_save": "off",
       "preferred_line_length": 120
     }
+  },
+  "edit_predictions": {
+    "mode": "eager"
   }
 }
