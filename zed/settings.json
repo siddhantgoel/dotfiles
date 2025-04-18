@@ -8,11 +8,11 @@
 // from the command palette or from `Zed` application menu.
 {
   "assistant": {
-    "default_model": {
-      "provider": "openai",
-      "model": "gpt-4o"
+    "provider": {
+      "name": "openai",
+      "default_model": "gpt-4o"
     },
-    "version": "2"
+    "version": "1"
   },
   "autosave": "off",
   "cursor_blink": false,
@@ -55,8 +55,7 @@
       ]
     },
     "HTML": {
-      "format_on_save": "off",
-      "preferred_line_length": 120
+      "format_on_save": "off"
     }
   },
   "edit_predictions": {
