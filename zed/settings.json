@@ -10,7 +10,7 @@
   "assistant": {
     "provider": {
       "name": "openai",
-      "default_model": "gpt-4o"
+      "default_model": "gpt-4.1"
     },
     "version": "1"
   },
