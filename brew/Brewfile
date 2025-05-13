@@ -41,6 +41,7 @@ brew "zoxide"
 brew "zplug"
 brew "zsh-syntax-highlighting"
 
+cask "anytype"
 cask "bitwarden"
 cask "claude"
 cask "discord"
