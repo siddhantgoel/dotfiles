@@ -10,12 +10,13 @@
   "assistant": {
     "provider": {
       "name": "openai",
-      "default_model": "gpt-4.1"
+      "default_model": "gpt-4.1-mini"
     },
     "version": "1"
   },
   "autosave": "off",
   "cursor_blink": false,
+  "show_completions_on_input": false,
   "theme": {
     "mode": "system",
     "light": "Github Light",
