@@ -19,6 +19,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # syntax highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-window-title/zsh-window-title.zsh
 
 # prompt
 fpath+=("$(brew --prefix)/share/zsh/site-functions")

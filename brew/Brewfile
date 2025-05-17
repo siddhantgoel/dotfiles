@@ -1,6 +1,7 @@
 tap "f1bonacc1/tap"
 tap "go-task/tap"
 tap "stripe/stripe-cli"
+tap "olets/tap"
 
 brew "age"
 brew "beancount-language-server"
@@ -39,6 +40,7 @@ brew "zig"
 brew "zola"
 brew "zplug"
 brew "zsh-syntax-highlighting"
+brew "zsh-window-title"
 
 cask "anytype"
 cask "bitwarden"
