@@ -29,9 +29,6 @@ prompt typewritten
 export TYPEWRITTEN_PROMPT_LAYOUT="pure"
 export TYPEWRITTEN_CURSOR="block"
 
-# zoxide
-eval "$(zoxide init zsh)"
-
 # direnv
 eval "$(direnv hook zsh)"
 
