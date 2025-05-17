@@ -17,18 +17,12 @@ alias dock="docker-compose"
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+autoload -Uz compinit; compinit;
+
 # syntax highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-window-title/zsh-window-title.zsh
-
-# prompt
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
-
-autoload -Uz compinit promptinit; compinit; promptinit;
-prompt typewritten
-
-export TYPEWRITTEN_PROMPT_LAYOUT="pure"
-export TYPEWRITTEN_CURSOR="block"
+source $(brew --prefix)/opt/spaceship/spaceship.zsh
 
 # direnv
 eval "$(direnv hook zsh)"
