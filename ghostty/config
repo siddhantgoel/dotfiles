@@ -1,4 +1,5 @@
 working-directory = home
+window-inherit-working-directory = false
 
 font-family = Monaco
 font-size = 12
