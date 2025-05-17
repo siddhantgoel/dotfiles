@@ -1,0 +1,16 @@
+title = " "
+macos-titlebar-proxy-icon = hidden
+
+font-family = Monaco
+font-size = 12
+font-thicken = true
+font-thicken-strength = 1
+adjust-cell-width = -1
+
+theme = GitHub-Light-Default
+
+cursor-style = block
+shell-integration-features = no-cursor
+
+window-padding-x = 8
+window-padding-y = 8
