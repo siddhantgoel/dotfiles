@@ -21,7 +21,6 @@ autoload -Uz compinit; compinit;
 
 # plugins
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix)/share/zsh-window-title/zsh-window-title.zsh
 source $(brew --prefix)/opt/spaceship/spaceship.zsh
 
 # direnv

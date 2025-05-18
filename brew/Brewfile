@@ -39,7 +39,6 @@ brew "zig"
 brew "zola"
 brew "zplug"
 brew "zsh-syntax-highlighting"
-brew "zsh-window-title"
 
 cask "anytype"
 cask "bitwarden"
