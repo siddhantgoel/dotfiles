@@ -38,9 +38,6 @@ eval "$(pyenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# npm
-export PATH="$HOME/.npm-packages/bin:$PATH"
-
 # Go
 export GOPATH="$HOME/Work/go"
 export PATH="$GOPATH/bin:$PATH"
