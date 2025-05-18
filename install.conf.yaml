@@ -32,10 +32,6 @@
     ~/.config/nvim/lua/02-packer.lua: nvim/lua/02-packer.lua
     ~/.config/nvim/lua/03-plugins.lua: nvim/lua/03-plugins.lua
     ~/.config/nvim/lua/04-onload.lua: nvim/lua/04-onload.lua
-    # p10k
-    ~/.p10k.zsh: p10k/p10k.zsh
-    # tmux
-    ~/.tmux.conf: tmux/tmux.conf
     # zed
     ~/.config/zed/settings.json: zed/settings.json
     # zsh
