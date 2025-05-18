@@ -46,7 +46,7 @@ export PATH="$GOPATH/bin:$PATH"
 source "$HOME/.cargo/env"
 
 # pkgconfig
-export PKG_CONFIG_PATH="/opt/homebrew/opt/mysql-client/lib/pkgconfig"
+export PKG_CONFIG_PATH="$(brew --prefix)/opt/mysql-client/lib/pkgconfig"
 
 # PostgreSQL
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="$(brew --prefix)/opt/postgresql@16/bin:$PATH"
