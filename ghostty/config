@@ -7,7 +7,7 @@ font-thicken = true
 font-thicken-strength = 0
 adjust-cell-width = -1
 
-theme = GitHub-Light-Default
+theme = GitHub-Light-High-Contrast
 
 cursor-style = block
 cursor-style-blink = false
