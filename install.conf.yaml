@@ -15,17 +15,7 @@
     ~/.config/ghostty/config: ghostty/config
     # kitty
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
-    ~/.config/kitty/themes/dracula.conf: kitty/dracula.conf
-    ~/.config/kitty/themes/everforest.conf: kitty/everforest.conf
-    ~/.config/kitty/themes/melange-light.conf: kitty/melange-light.conf
-    ~/.config/kitty/themes/flexoki-light.conf: kitty/flexoki-light.conf
-    ~/.config/kitty/themes/nord.conf: kitty/nord.conf
-    ~/.config/kitty/themes/one-dark.conf: kitty/one-dark.conf
-    ~/.config/kitty/themes/one-half-dark.conf: kitty/one-half-dark.conf
-    ~/.config/kitty/themes/catppuccin-latte.conf: kitty/catppuccin-latte.conf
-    ~/.config/kitty/themes/tango-light.conf: kitty/tango-light.conf
     ~/.config/kitty/themes/github-light.conf: kitty/github-light.conf
-    ~/.config/kitty/themes/onehalf-light.conf: kitty/onehalf-light.conf
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/01-base.lua: nvim/lua/01-base.lua
