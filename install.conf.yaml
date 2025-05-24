@@ -22,6 +22,8 @@
     ~/.config/nvim/lua/02-packer.lua: nvim/lua/02-packer.lua
     ~/.config/nvim/lua/03-plugins.lua: nvim/lua/03-plugins.lua
     ~/.config/nvim/lua/04-onload.lua: nvim/lua/04-onload.lua
+    # wezterm
+    ~/.wezterm.lua: wezterm/wezterm.lua
     # zed
     ~/.config/zed/settings.json: zed/settings.json
     # zsh
