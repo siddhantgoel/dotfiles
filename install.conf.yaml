@@ -11,11 +11,6 @@
     ~/.config/crestic/excludes: crestic/excludes
     ~/.config/crestic/password: crestic/password
     ~/.config/crestic/conf.d/home.cfg: crestic/conf.d/home.cfg
-    # ghostty
-    ~/.config/ghostty/config: ghostty/config
-    # kitty
-    ~/.config/kitty/kitty.conf: kitty/kitty.conf
-    ~/.config/kitty/themes/github-light.conf: kitty/github-light.conf
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/01-base.lua: nvim/lua/01-base.lua
@@ -32,9 +27,6 @@
 - create:
     - ~/.config/crestic
     - ~/.config/crestic/conf.d
-    - ~/.config/ghostty
-    - ~/.config/kitty
-    - ~/.config/kitty/themes
     - ~/.config/nvim
     - ~/.config/nvim/lua
     - ~/.config/zed
