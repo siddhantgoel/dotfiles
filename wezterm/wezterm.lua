@@ -2,7 +2,8 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 config.color_scheme = 'Github (base16)'
-config.font = wezterm.font 'Monaco'
+config.font = wezterm.font('Monaco', { weight = 'Medium' })
+config.font_size = 12.0
 
 config.tab_bar_at_bottom = true
 
