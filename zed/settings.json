@@ -10,7 +10,7 @@
   "agent": {
     "provider": {
       "name": "openai",
-      "default_model": "gpt-4.1-mini"
+      "default_model": "gpt-4o-mini"
     },
     "version": "1"
   },
