@@ -1,0 +1,18 @@
+theme = OneHalfLight
+
+cursor-style = block
+cursor-style-blink = false
+
+font-family = Monaco
+font-thicken = true
+font-thicken-strength = 1
+
+adjust-cell-height = 8%
+adjust-cell-width = -8%
+
+shell-integration-features = no-cursor
+
+keybind = cmd+shift+left=goto_split:left
+keybind = cmd+shift+right=goto_split:right
+keybind = cmd+shift+up=goto_split:up
+keybind = cmd+shift+down=goto_split:down
