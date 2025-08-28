@@ -21,6 +21,8 @@
     ~/.config/nvim/lua/04-onload.lua: nvim/lua/04-onload.lua
     # wezterm
     ~/.wezterm.lua: wezterm/wezterm.lua
+    # todotxt:
+    ~/.todo.cfg: todotxt/todo.cfg
     # zed
     ~/.config/zed/settings.json: zed/settings.json
     # zsh
