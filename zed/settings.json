@@ -8,19 +8,19 @@
 // from the command palette or from `Zed` application menu.
 {
   "agent": {
+    "inline_assistant_model": {
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-latest"
+    },
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-sonnet-4-latest"
+      "model": "claude-haiku-4-5-latest"
     }
   },
   "autosave": "off",
   "cursor_blink": false,
   "show_completions_on_input": false,
-  "theme": {
-    "mode": "system",
-    "light": "Github Light",
-    "dark": "Github Dark"
-  },
+  "theme": "Github Light",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -48,9 +48,7 @@
           }
         },
         {
-          "code_actions": {
-            "source.organizeImports.ruff": true
-          }
+          "code_action": "source.organizeImports.ruff"
         }
       ]
     },
