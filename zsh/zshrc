@@ -34,11 +34,6 @@ eval "$(direnv hook zsh)"
 # pipx
 export PATH="$HOME/.local/bin:$PATH"
 
-# python
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
