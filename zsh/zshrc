@@ -57,4 +57,4 @@ export PKG_CONFIG_PATH="$(brew --prefix)/opt/mysql-client/lib/pkgconfig"
 export PATH="$(brew --prefix)/opt/postgresql@17/bin:$PATH"
 
 # Atuin
-eval "$(atuin init zsh)"
+eval "$(atuin init zsh --disable-up-arrow)"
