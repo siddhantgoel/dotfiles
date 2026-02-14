@@ -20,7 +20,11 @@
   "autosave": "off",
   "cursor_blink": false,
   "show_completions_on_input": false,
-  "theme": "Github Light",
+  "theme": {
+    "mode": "system",
+    "light": "GitHub Light",
+    "dark": "GitHub Dark"
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -53,6 +57,7 @@
       ]
     },
     "HTML": {
+      "preferred_line_length": 100,
       "format_on_save": "off"
     }
   },
