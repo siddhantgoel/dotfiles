@@ -1,4 +1,4 @@
-active_model = "devstral-2"
+active_model = "mistral-large-latest"
 system_prompt_id = "technical-writer"
 
 [tools.read_file]
