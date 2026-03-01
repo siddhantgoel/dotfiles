@@ -1,0 +1,5 @@
+active_model = "devstral-2"
+system_prompt_id = "technical-writer"
+
+[tools.read_file]
+permission = "always"

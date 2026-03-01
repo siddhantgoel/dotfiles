@@ -11,18 +11,16 @@
     ~/.config/crestic/excludes: crestic/excludes
     ~/.config/crestic/password: crestic/password
     ~/.config/crestic/conf.d/home.cfg: crestic/conf.d/home.cfg
-    # ghostty
-    ~/.config/ghostty/config: ghostty/config
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/01-base.lua: nvim/lua/01-base.lua
     ~/.config/nvim/lua/02-packer.lua: nvim/lua/02-packer.lua
     ~/.config/nvim/lua/03-plugins.lua: nvim/lua/03-plugins.lua
     ~/.config/nvim/lua/04-onload.lua: nvim/lua/04-onload.lua
+    # vibe
+    ~/.vibe/agents/technical-writer.toml: vibe/agents/technical-writer.toml
     # wezterm
     ~/.wezterm.lua: wezterm/wezterm.lua
-    # todotxt:
-    ~/.todo.cfg: todotxt/todo.cfg
     # zed
     ~/.config/zed/settings.json: zed/settings.json
     # zsh
@@ -31,7 +29,9 @@
 - create:
     - ~/.config/crestic
     - ~/.config/crestic/conf.d
-    - ~/.config/ghostty
+    - ~/.config/vibe/agents
     - ~/.config/nvim
     - ~/.config/nvim/lua
     - ~/.config/zed
+    - ~/.vibe/agents/
+    - ~/.vibe/prompts/
