@@ -17,8 +17,6 @@
     ~/.config/nvim/lua/02-packer.lua: nvim/lua/02-packer.lua
     ~/.config/nvim/lua/03-plugins.lua: nvim/lua/03-plugins.lua
     ~/.config/nvim/lua/04-onload.lua: nvim/lua/04-onload.lua
-    # vibe
-    ~/.vibe/agents/technical-writer.toml: vibe/agents/technical-writer.toml
     # wezterm
     ~/.wezterm.lua: wezterm/wezterm.lua
     # zed
@@ -33,5 +31,3 @@
     - ~/.config/nvim
     - ~/.config/nvim/lua
     - ~/.config/zed
-    - ~/.vibe/agents/
-    - ~/.vibe/prompts/
