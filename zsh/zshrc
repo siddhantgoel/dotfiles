@@ -34,9 +34,8 @@ eval "$(direnv hook zsh)"
 # pipx
 export PATH="$HOME/.local/bin:$PATH"
 
-# ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# mise
+eval "$(mise activate zsh)"
 
 # Go
 export GOPATH="$HOME/Work/go"
