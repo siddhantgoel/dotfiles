@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
+set -x
+
 if [ $# -ne 2 ]; then
-    echo "Usage: $(basename "$0") <source_dir> <target_dir>" >&2
+    echo "Usage: $(basename "$0") <source_dir> <domain>" >&2
     exit 1
 fi
 
@@ -10,4 +12,4 @@ if [ ! -d "$1" ]; then
     exit 1
 fi
 
-rsync -avz --progress --rsync-path "sudo -u caddy rsync" "${1%/}/" "landing-box:$2"
+rsync -avz --progress --rsync-path "sudo -u caddy rsync" "${1%/}/" "landing-box:/srv/$2"
