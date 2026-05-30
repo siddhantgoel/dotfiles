@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if [ $# -ne 2 ]; then
+    echo "Usage: $(basename "$0") <source_dir> <target_dir>" >&2
+    exit 1
+fi
+
+if [ ! -d "$1" ]; then
+    echo "Error: source directory '$1' does not exist" >&2
+    exit 1
+fi
+
+rsync -avz --progress --rsync-path "sudo -u caddy rsync" "${1%/}/" "landing-box:$2"

@@ -11,6 +11,8 @@
     ~/.config/crestic/excludes: crestic/excludes
     ~/.config/crestic/password: crestic/password
     ~/.config/crestic/conf.d/home.cfg: crestic/conf.d/home.cfg
+    # local/bin
+    ~/.local/bin/deploy-site: local/bin/deploy-site
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/01-base.lua: nvim/lua/01-base.lua
