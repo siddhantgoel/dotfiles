@@ -13,6 +13,8 @@
     ~/.config/crestic/conf.d/home.cfg: crestic/conf.d/home.cfg
     # local/bin
     ~/.local/bin/deploy-site: local/bin/deploy-site
+    # opencode
+    ~/.config/opencode/opencode.json: opencode/opencode.json
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/01-base.lua: nvim/lua/01-base.lua
@@ -30,6 +32,7 @@
     - ~/.config/crestic
     - ~/.config/crestic/conf.d
     - ~/.config/vibe/agents
+    - ~/.config/opencode
     - ~/.config/nvim
     - ~/.config/nvim/lua
     - ~/.config/zed
