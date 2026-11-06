@@ -1,4 +1,13 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugins": ["-opencode.provider.vllm"]
+  "plugins": ["-opencode.provider.vllm"],
+  "permission": {
+    "bash": {
+      "*": "ask",
+      "git *": "allow",
+      "git commit *": "deny",
+      "git push *": "deny",
+      "grep *": "allow"
+   }
+  },
 }
