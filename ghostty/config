@@ -8,8 +8,8 @@ font-size = 12
 font-thicken = true
 font-thicken-strength = 1
 
-adjust-cell-height = 8%
-adjust-cell-width = -8%
+adjust-cell-height = 5%
+adjust-cell-width = -2%
 
 shell-integration-features = no-cursor
 
