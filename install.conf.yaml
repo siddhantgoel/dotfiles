@@ -15,6 +15,8 @@
     ~/.local/bin/deploy-site: local/bin/deploy-site
     # opencode
     ~/.config/opencode/opencode.json: opencode/opencode.json
+    # ghostty
+    ~/.config/ghostty/config: ghostty/config
     # nvim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/01-base.lua: nvim/lua/01-base.lua
@@ -32,6 +34,7 @@
     - ~/.config/crestic
     - ~/.config/crestic/conf.d
     - ~/.config/vibe/agents
+    - ~/.config/ghostty
     - ~/.config/opencode
     - ~/.config/nvim
     - ~/.config/nvim/lua
