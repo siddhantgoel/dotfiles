@@ -34,9 +34,6 @@ eval "$(direnv hook zsh)"
 # pipx
 export PATH="$HOME/.local/bin:$PATH"
 
-# mise
-eval "$(mise activate zsh)"
-
 # Go
 export GOPATH="$HOME/Work/go"
 export PATH="$GOPATH/bin:$PATH"
