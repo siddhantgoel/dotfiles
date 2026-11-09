@@ -5,7 +5,7 @@ cursor-style-blink = false
 
 font-family = Monaco
 font-size = 12
-font-thicken = true
+font-thicken = false
 font-thicken-strength = 1
 
 adjust-cell-height = 5%
