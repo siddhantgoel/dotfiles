@@ -11,6 +11,8 @@
     ~/.config/crestic/excludes: crestic/excludes
     ~/.config/crestic/password: crestic/password
     ~/.config/crestic/conf.d/home.cfg: crestic/conf.d/home.cfg
+    # herdr-app
+    ~/.config/herdr-app/keys.json: herdr-app/keys.json
     # local/bin
     ~/.local/bin/deploy-site: local/bin/deploy-site
     # opencode
@@ -33,8 +35,8 @@
 - create:
     - ~/.config/crestic
     - ~/.config/crestic/conf.d
-    - ~/.config/vibe/agents
     - ~/.config/ghostty
+    - ~/.config/herdr-app
     - ~/.config/opencode
     - ~/.config/nvim
     - ~/.config/nvim/lua
