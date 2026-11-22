@@ -6,6 +6,10 @@
       relink: true
 
 - link:
+    # cmux
+    ~/.config/cmux/cmux.json:
+      path: cmux/cmux.json
+      create: true
     # crestic
     ~/.config/crestic/config.cfg: crestic/config.cfg
     ~/.config/crestic/excludes: crestic/excludes
@@ -33,6 +37,7 @@
     ~/.zshrc: zsh/zshrc
 
 - create:
+    - ~/.config/cmux
     - ~/.config/crestic
     - ~/.config/crestic/conf.d
     - ~/.config/ghostty
